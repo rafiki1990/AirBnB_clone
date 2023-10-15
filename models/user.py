@@ -2,7 +2,7 @@
 
 from model.base_model import BaseModel
 
-class User():
+class User(BaseModel):
     
     email = ''
     password = ''
