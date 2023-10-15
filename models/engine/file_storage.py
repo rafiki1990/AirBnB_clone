@@ -14,9 +14,10 @@ class FileStorage:
         self.__objects[key] = obj
 
     def save(self):
-        data = {}
-        for key, obj in self.__objects.items():
-            data[key] = obj.to_dict()
+        data = {} # This line initializes an empty dictionary called data. 
+        # This dictionary will be used to store the data that you want to save to the JSON file
+        for key, obj in self.__objects.items(): #Iterate through key-value pairs of the dictionary
+            data[key] = obj.to_dict() # Creating a dictionary with object data (as per instructions)
         
         with open(self.__file_path, 'w') as file:
             json.dump(data, file)
