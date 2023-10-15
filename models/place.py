@@ -2,8 +2,11 @@
 
 from models.base_model import BaseModel
 
+
 class Place(BaseModel):
-    
+    """
+    Place class for storing information about places.
+    """
     city_id = ''
     user_id = ''
     name = ''

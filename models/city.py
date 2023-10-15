@@ -2,7 +2,10 @@
 
 from models.base_model import BaseModel
 
-class City(BaseModel):
 
+class City(BaseModel):
+    """
+    City class for storing information about cities.
+    """
     state_id = ''
     name = ''
