@@ -3,18 +3,18 @@
 import cmd
 
 class HBNBCommand(cmd.Cmd):
-    prompt = "(hbnb) "
+    prompt = '(hbnb) '
 
-    def quit(self, arg):
+    def do_quit(self, arg):
     
         return True
 
-    def EOF(self, arg):
-    
+    def do_EOF(self, arg):
+
         print()
         return True
 
-    def emptyline(self):
+    def do_emptyline(self, help):
         pass
 
 if __name__ == '__main__':
